@@ -1,0 +1,44 @@
+$m: '.m-contact';
+
+#{$m} {
+  width: 100%;
+  position: fixed;
+  @media (max-width: $break_xsmall) {
+    position: relative;
+  }
+}
+
+#{$m}--container {
+  @extend %clearfix;
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1em; 
+  @media (max-width: $break_large) {
+    width: 100%;
+  }
+  @media (max-width: $break_xsmall) {
+    padding-bottom: 0em;
+  }
+}
+
+#{$m}--info {
+  float: right;
+  a {
+    @extend %hover;
+  }
+}
+
+#{$m}--nav {
+  padding-top: 3em;
+  font-size: 1.25em;
+  float: left;
+  h3 {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  a {
+    @extend %hover;
+    display: block;
+  }
+}

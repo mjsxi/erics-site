@@ -1,0 +1,50 @@
+$m: '.m-main';
+
+#{$m} {
+  @extend %clearfix;
+  margin-top: 7.7em;
+  @media (max-width: $break_xsmall) {
+    margin-top: 0em;
+  }
+}
+
+#{$m}--nav__container {
+  float: left;
+}
+
+#{$m}--nav {
+  font-size: 1.25em;
+  margin-top: 1em;
+  h3 {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  a {
+    @extend %hover;
+  }
+}
+
+#{$m}--work__container {
+  float: left;
+  margin-top: 10em;
+}
+
+#{$m}--work__desc {
+  margin-top: 1em;
+  margin-bottom: 1em; 
+  i {
+    font-style: italic;
+  }
+}
+
+#{$m}--work__image {
+  @extend %clearfix;
+  img {
+    float: left;
+  }
+  .photos & {
+    img {
+      margin-bottom: 2em;
+    }
+  }
+}
