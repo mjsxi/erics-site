@@ -5,71 +5,38 @@ layout: layout
 
 <div class="m-main">
   <section class="m-main--nav__container">
+
     <div class="m-main--nav">
       <h3>About</h3>
       <p>Designer and photographer</p>
       <%= link_to 'Currently working at Poulin + Morris', 'http://www.poulinmorris.com/', :target => "_blank" %>
     </div>
+
     <div class="m-main--nav">
       <h3>Previous</h3>
       <p><%= link_to 'Group M', 'http://www.group-m.com/', :target => "_blank" %>, July 2013–July 2014</p>
       <p>UArts School of Design, Feb 2014–May 2014</p>
       <p><%= link_to 'Mod Worldwide', 'http://modworldwide.com/', :target => "_blank" %>, May 2013–Aug 2013</p>
     </div>
+
     <div class="m-main--nav">
       <h3>Education</h3>
       <p><%= link_to 'The University of the Arts', 'http://www.uarts.edu/', :target => "_blank" %>, 2014</p>
     </div>
+
     <div class="m-main--nav">
       <h3>Workshops</h3>
       <p>Information Architecture (w/ Paul Kahn)</p>
       <p>Typeface Design (w/ Ben Kiel)</p>
     </div>
+
   </section>
   <section class="m-main--work__container">
-    <div class="m-main--work">
-      <div class="m-main--work__desc">
-        <h3>Bone Machine Typeface</h3>
-        <p>Regular and Oblique</p>
-        <p>Currently working on Bold</p>
-      </div>
-      <div class="m-main--work__image">
-        <%= image_tag 'type_1.jpg' %>
-        <%= image_tag 'type_2.jpg' %>
-        <%= image_tag 'type_3.jpg' %>
-      </div>
-    </div>
-    <div class="m-main--work">
-      <div class="m-main--work__desc">
-        <h3>Skin: Nakedly Beautiful</h3>
-        <p><em>UArts Senior Thesis</em></p>
-      </div>
-      <div class="m-main--work__image">
-        <%= image_tag 'skin_diagram.png' %>
-        <%= image_tag 'skin_lizard.png' %>
-        <%= image_tag 'skin_galaxy.png' %>
-      </div>
-    </div>
-    <div class="m-main--work">
-      <div class="m-main--work__desc">
-        <h3>Apex Automotive TV</h3>
-        <p><em>TV Network Branding</em></p>
-      </div>
-      <div class="m-main--work__image">
-        <%= image_tag 'apex_logo_final.jpg' %>
-        <%= image_tag 'apex_imac.png' %>
-      </div>
-    </div>
-    <div class="m-main--work">
-      <div class="m-main--work__desc">
-        <h3>UArts School of Design</h3>
-        <p><em>Exhibition Branding</em></p>
-      </div>
-      <div class="m-main--work__image">
-        <%= image_tag 'camd_logo_final.jpg' %>
-        <%= image_tag 'camd_imac.png' %>
-        <%= image_tag 'camd_show.jpg' %>
-      </div>
-    </div>
+
+    <%= partial "partials/_bone-machine" %>
+    <%= partial "partials/_naked" %>
+    <%= partial "partials/_apex" %>
+    <%= partial "partials/_uarts" %>
+
   </section>
 </div>
