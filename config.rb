@@ -22,6 +22,12 @@ configure :build do
   # Minify HTML
   activate :minify_html
 
+  # gzips things for faster loading
+  activate :gzip
+
+  # optimizes images to reduce load times
+  activate :imageoptim
+
   # # Enable cache buster
   # activate :asset_hash
 
