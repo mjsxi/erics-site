@@ -1,0 +1,80 @@
+.m-projects {
+  @extend %clearfix;
+
+  width: 100%;
+  margin-bottom: 1em;
+
+  &--image {
+    float: left;
+    width: 100%;
+    height: 250px;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: opacity .3s;
+    background-repeat: no-repeat;
+
+    &:hover {
+      opacity: .75;
+    }
+
+    @include breakpoint(medium) {
+      width: 50%;
+      height: 300px;
+    }
+  }
+
+  a {
+    &:nth-child(1) {
+      .m-projects--image {
+        background-image: image-url("nypresbyterian.jpg");
+      }
+    }
+
+    &:nth-child(2) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("uarts.jpg");
+      }
+    }
+
+    &:nth-child(3) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("bm_logo.jpg");
+      }
+    }
+
+    &:nth-child(4) {
+      .m-projects--image {
+        background-image: image-url("cornell.jpg");
+      }
+    }
+
+    &:nth-child(5) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("eyesite_mac.jpg");
+      }
+    }
+
+    &:nth-child(6) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("apex_logo.jpg");
+      }
+    }
+
+    &:nth-child(7) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("skin-main.jpg");
+      }
+    }
+
+    &:nth-child(8) {
+      .m-projects--image {
+        background-image: image-url("philly.jpg");
+      }
+    }
+  }
+}
