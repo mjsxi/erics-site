@@ -1,0 +1,29 @@
+// use this for @ font face
+@mixin fontface($font-name,$file-name,$style,$weight) {
+  @font-face {
+    font-family: '#{$font-name}';
+    src: url('/fonts/#{$file-name}'+'.eot') format('eot');
+    src: url('/fonts/#{$file-name}'+'.woff2') format('woff2'),
+         url('/fonts/#{$file-name}'+'.woff') format('woff'),
+         url('/fonts/#{$file-name}'+'.ttf') format('truetype'),
+         url('/fonts/#{$file-name}'+'.svg') format('svg');
+         font-style: $style;
+         font-weight: $weight;
+  }
+}
+
+// calculates rems
+@function calculateRem($size) {
+  $emSize: $size / 16px;
+  @return $emSize * 1rem;
+}
+
+// breakpoint mixin
+@mixin breakpoint($point) {
+  @if $point == medium {
+    @media (min-width: $break_medium)  { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: $break_large) { @content; }
+  }
+}

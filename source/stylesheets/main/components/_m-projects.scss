@@ -1,0 +1,131 @@
+.m-projects {
+  @extend %clearfix;
+
+  width: 100%;
+  margin-bottom: 1em;
+
+  &--image {
+    float: left;
+    width: 100%;
+    height: 250px;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: opacity .3s;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &:after {
+      content: "NewYork-Presbyterian";
+
+      transition: opacity .3s;
+      font-family: $klievit;
+      padding: 1em;
+      font-size: 1.5em;
+      position: absolute;
+      color: #fff;
+      background-color: $default-font-color;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+    }
+
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    @include breakpoint(medium) {
+      width: 50%;
+      height: 300px;
+    }
+  }
+
+  a {
+    &:nth-child(1) {
+      .m-projects--image {
+        background-image: image-url("nypresbyterian.jpg");
+
+        &:after {
+          content: "NewYork-Presbyterian";
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("uarts.jpg");
+
+        &:after {
+          content: "UArts School of Art, Media and Design School of Design Exhibition";
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("bm_logo.jpg");
+
+        &:after {
+          content: "Bone Machine";
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .m-projects--image {
+        background-image: image-url("cornell.jpg");
+
+        &:after {
+          content: "Cornell University Department of Communication";
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      .m-projects--image {
+        background-image: image-url("eyesite_mac.jpg");
+
+        &:after {
+          content: "Eyesite Philly";
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("apex_logo.jpg");
+
+        &:after {
+          content: "Apex Automotive";
+        }
+      }
+    }
+
+    &:nth-child(7) {
+      .m-projects--image {
+        background-size: contain;
+        background-image: image-url("skin-main.jpg");
+
+        &:after {
+          content: "Skin: Nakedly Beautiful";
+        }
+      }
+    }
+
+    &:nth-child(8) {
+      .m-projects--image {
+        background-image: image-url("philly.jpg");
+
+        &:after {
+          content: "HealthCare4AllPA";
+        }
+      }
+    }
+  }
+}

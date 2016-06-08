@@ -1,0 +1,60 @@
+.m-nav {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  &--container {
+    width: 59%;
+    display: inline-block;
+    position: relative;
+
+    &_scroll {
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &_overflow {
+      min-width: 535px;
+    }
+  }
+
+  a {
+    color: $default-font-color;
+
+    text-decoration: none;
+    vertical-align: bottom;
+    margin-right: 1.5em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--home {
+    font-family: $klievit;
+
+    font-size: 1.5em;
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    margin-right: 0em !important;
+
+    @include breakpoint(medium) {
+      text-transform: uppercase;
+    }
+  }
+
+  &--overlay {
+    position: absolute;
+    top: 0;
+    left: 85%;
+    right: -2px;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(153,153,153,0) 0%,rgba(255,255,255,1) 100%);
+
+    @include breakpoint(large) {
+      display: none;
+    }
+  }
+}
