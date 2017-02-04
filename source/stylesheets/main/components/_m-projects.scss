@@ -44,7 +44,7 @@
   }
 
   a {
-    &:nth-child(1) {
+    &:nth-child(999) {
       .m-projects--image {
         background-image: image-url("nypresbyterian.jpg");
 
@@ -54,7 +54,7 @@
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(1) {
       .m-projects--image {
         background-size: contain;
         background-image: image-url("uarts.jpg");
@@ -65,7 +65,7 @@
       }
     }
 
-    &:nth-child(3) {
+    &:nth-child(2) {
       .m-projects--image {
         background-size: contain;
         background-image: image-url("bm_logo.jpg");
@@ -76,7 +76,7 @@
       }
     }
 
-    &:nth-child(4) {
+    &:nth-child(999) {
       .m-projects--image {
         background-image: image-url("cornell.jpg");
 
@@ -86,7 +86,7 @@
       }
     }
 
-    &:nth-child(5) {
+    &:nth-child(3) {
       .m-projects--image {
         background-image: image-url("eyesite_mac.jpg");
 
@@ -96,7 +96,7 @@
       }
     }
 
-    &:nth-child(6) {
+    &:nth-child(4) {
       .m-projects--image {
         background-size: contain;
         background-image: image-url("apex_logo.jpg");
@@ -107,7 +107,7 @@
       }
     }
 
-    &:nth-child(7) {
+    &:nth-child(5) {
       .m-projects--image {
         background-size: contain;
         background-image: image-url("skin-main.jpg");
@@ -118,7 +118,7 @@
       }
     }
 
-    &:nth-child(8) {
+    &:nth-child(6) {
       .m-projects--image {
         background-image: image-url("philly.jpg");
 
