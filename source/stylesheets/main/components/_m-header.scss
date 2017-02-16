@@ -3,10 +3,15 @@
 
   h1 {
     font-size: 1.25em;
+    width: 75%;
   }
 
   @include breakpoint(medium) {
     font-size: 1.75em;
+    //width: 75%;
+  }
+
+  p {
     width: 75%;
   }
 
