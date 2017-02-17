@@ -33,7 +33,7 @@
 
     &:hover {
       &:after {
-        opacity: 1;
+        opacity: .9;
       }
     }
 
@@ -56,8 +56,7 @@
 
     &:nth-child(1) {
       .m-projects--image {
-        background-size: contain;
-        background-image: image-url("uarts.jpg");
+        background-image: image-url("camd_home.jpg");
 
         &:after {
           content: "UArts School of Art, Media and Design School of Design Exhibition";
@@ -67,8 +66,7 @@
 
     &:nth-child(2) {
       .m-projects--image {
-        background-size: contain;
-        background-image: image-url("bm_logo.jpg");
+        background-image: image-url("type_home.jpg");
 
         &:after {
           content: "Bone Machine";
@@ -98,8 +96,7 @@
 
     &:nth-child(4) {
       .m-projects--image {
-        background-size: contain;
-        background-image: image-url("apex_logo.jpg");
+        background-image: image-url("apex_home.jpg");
 
         &:after {
           content: "Apex Automotive";
@@ -109,8 +106,7 @@
 
     &:nth-child(5) {
       .m-projects--image {
-        background-size: contain;
-        background-image: image-url("skin-main.jpg");
+        background-image: image-url("skin_home.jpg");
 
         &:after {
           content: "Skin: Nakedly Beautiful";
