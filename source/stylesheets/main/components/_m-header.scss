@@ -13,11 +13,12 @@
   }
 
   p {
-    font-size: .7em;
+    font-size: 1em;
     width: 100%;
 
     @include breakpoint(medium) {
       width: 65%;
+      font-size: .7em;
     }
 
 
