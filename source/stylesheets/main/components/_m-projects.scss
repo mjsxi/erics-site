@@ -15,7 +15,7 @@
     position: relative;
 
     &:after {
-      content: "NewYork-Presbyterian";
+      content: "New York-Presbyterian";
 
       transition: opacity .3s;
       font-family: $klievit;
@@ -44,57 +44,7 @@
   }
 
   a {
-    &:nth-child(999) {
-      .m-projects--image {
-        background-image: image-url("nypresbyterian.jpg");
-
-        &:after {
-          content: "NewYork-Presbyterian";
-        }
-      }
-    }
-
     &:nth-child(1) {
-      .m-projects--image {
-        background-image: image-url("camd_home.jpg");
-
-        &:after {
-          content: "UArts School of Art, Media and Design School of Design Exhibition";
-        }
-      }
-    }
-
-    &:nth-child(2) {
-      .m-projects--image {
-        background-image: image-url("type_home.jpg");
-
-        &:after {
-          content: "Bone Machine";
-        }
-      }
-    }
-
-    &:nth-child(999) {
-      .m-projects--image {
-        background-image: image-url("cornell.jpg");
-
-        &:after {
-          content: "Cornell University Department of Communication";
-        }
-      }
-    }
-
-    &:nth-child(3) {
-      .m-projects--image {
-        background-image: image-url("eyesite_home.jpg");
-
-        &:after {
-          content: "Eyesite Philly";
-        }
-      }
-    }
-
-    &:nth-child(4) {
       .m-projects--image {
         background-image: image-url("apex_home.jpg");
 
@@ -104,12 +54,42 @@
       }
     }
 
-    &:nth-child(5) {
+    &:nth-child(2) {
       .m-projects--image {
-        background-image: image-url("skin_home.jpg");
+        background-image: image-url("wait_home.jpg");
 
         &:after {
-          content: "Skin: Nakedly Beautiful";
+          content: "Wait";
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .m-projects--image {
+        background-image: image-url("camd_home.jpg");
+
+        &:after {
+          content: "UArts School of Art, Media and Design School of Design Exhibition";
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .m-projects--image {
+        background-image: image-url("ima_3.jpg");
+
+        &:after {
+          content: "In My America";
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      .m-projects--image {
+        background-image: image-url("bm_home.jpg");
+
+        &:after {
+          content: "Bone Machine";
         }
       }
     }
@@ -120,6 +100,26 @@
 
         &:after {
           content: "HealthCare4AllPA";
+        }
+      }
+    }
+
+    &:nth-child(7) {
+      .m-projects--image {
+        background-image: image-url("skin_home.jpg");
+
+        &:after {
+          content: "Skin: Nakedly Beautiful";
+        }
+      }
+    }
+
+    &:nth-child(8) {
+      .m-projects--image {
+        background-image: image-url("eyesite_home.jpg");
+
+        &:after {
+          content: "Eyesite Philly";
         }
       }
     }

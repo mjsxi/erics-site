@@ -1,5 +1,6 @@
 .m-header {
   font-size: 1.25em;
+  margin-bottom: 3em;
 
   h1 {
     font-size: 1.25em;
@@ -12,7 +13,17 @@
   }
 
   p {
-    width: 75%;
+    font-size: .7em;
+    width: 100%;
+
+    @include breakpoint(medium) {
+      width: 65%;
+    }
+
+
+    @include breakpoint(large) {
+      width: 45%;
+    }
   }
 
   &--lead {
