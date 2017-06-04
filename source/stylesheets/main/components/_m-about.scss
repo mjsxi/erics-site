@@ -1,3 +1,15 @@
 .m-about {
   width: 100%;
 }
+
+a {
+  color: $default-font-color;
+
+  text-decoration: none;
+  vertical-align: bottom;
+  margin-right: 1.5em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
