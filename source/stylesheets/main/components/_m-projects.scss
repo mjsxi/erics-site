@@ -76,20 +76,20 @@
 
     &:nth-child(4) {
       .m-projects--image {
-        background-image: image-url("ima_3.jpg");
+        background-image: image-url("mgm_8.jpg");
 
         &:after {
-          content: "In My America";
+          content: "MGM National Harbor";
         }
       }
     }
 
     &:nth-child(5) {
       .m-projects--image {
-        background-image: image-url("bm_home.jpg");
+        background-image: image-url("cornell_home.jpg");
 
         &:after {
-          content: "Bone Machine";
+          content: "Cornell University Department of Communication";
         }
       }
     }
@@ -115,6 +115,26 @@
     }
 
     &:nth-child(8) {
+      .m-projects--image {
+        background-image: image-url("ima_3.jpg");
+
+        &:after {
+          content: "In My America";
+        }
+      }
+    }
+
+    &:nth-child(9) {
+      .m-projects--image {
+        background-image: image-url("bm_home.jpg");
+
+        &:after {
+          content: "Bone Machine";
+        }
+      }
+    }
+
+    &:nth-child(10) {
       .m-projects--image {
         background-image: image-url("eyesite_home.jpg");
 
