@@ -96,6 +96,16 @@
 
     &:nth-child(6) {
       .m-projects--image {
+        background-image: image-url("ar_home.jpg");
+
+        &:after {
+          content: "Archigraphia Redux";
+        }
+      }
+    }
+
+    &:nth-child(7) {
+      .m-projects--image {
         background-image: image-url("hc_home.jpg");
 
         &:after {
@@ -104,27 +114,7 @@
       }
     }
 
-    &:nth-child(7) {
-      .m-projects--image {
-        background-image: image-url("skin_home.jpg");
-
-        &:after {
-          content: "Skin: Nakedly Beautiful";
-        }
-      }
-    }
-
     &:nth-child(8) {
-      .m-projects--image {
-        background-image: image-url("ima_3.jpg");
-
-        &:after {
-          content: "In My America";
-        }
-      }
-    }
-
-    &:nth-child(9) {
       .m-projects--image {
         background-image: image-url("bm_home.jpg");
 
