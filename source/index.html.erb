@@ -10,4 +10,30 @@ title: Eric Shelton Design
 
 <%= partial "partials/_projects" %>
 
+<script>
+  function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password',' ');
+    while (testV < 3) {
+    if (!pass1)
+      history.go(-1);
+    if (pass1.toLowerCase() == "eric2020") {
+      window.open('protectpage.html');
+      break;
+    }
+  testV+=1;
+  var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+  }
+  if (pass1.toLowerCase()!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+  }
+</script>
+
+<center>
+  <form>
+    <input type="button" value="Enter Protected Area" onClick="passWord()">
+  </form>
+</center>
+
 <p>This site is under construction. Email for details. </P.
